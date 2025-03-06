@@ -29,11 +29,11 @@ public class EnemySpaceshipControlSystem implements IEntityProcessingService {
                         spi -> {world.addEntity(spi.createBullet(enemy, gameData));}
                 );
             }
-            if (randomnumber > 0.50 && randomnumber <=0.75){
+            if (randomnumber > 40 && randomnumber <=0.75){
                 //Moves Left
                 enemy.setRotation(enemy.getRotation() -5);
             }
-            if (randomnumber > 0.25 && randomnumber <=0.50){
+            if (randomnumber > 0.25 && randomnumber <=0.40){
                 //Moves Right
                 enemy.setRotation(enemy.getRotation() +5);
             }
